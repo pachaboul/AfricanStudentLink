@@ -1,0 +1,13 @@
+http://workshop.rs/2010/04/coin-slider-image-slider-with-unique-effects/
+
+http://www.webinventif.fr/jqgalscroll-faites-defiler-vos-images-avec-jquery/
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl('css/coin-slider-styles.css');?>" />
+ <script type="text/javascript" src="<?php echo $this->baseUrl('js/coin-slider.js');?>"></script>
+ <script type="text/javascript" src="<?php echo $this->baseUrl('js/coin-slider.min.js);?>"></script>

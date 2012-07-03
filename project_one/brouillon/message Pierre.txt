@@ -1,0 +1,1 @@
+le visiteur place son annonce son annonce n'est visible qu'apres l'approuvement de l'admin

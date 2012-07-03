@@ -1,0 +1,111 @@
+body,td,th {
+	font-family: tahoma;
+	font-size: 11px;
+	color: #414141;
+}
+body {
+	background-color: #414141;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.style1 {color: #ffffff}
+a {
+	font-size: 11px;
+	color: #ffffff;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: #0000ff;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+.style2 {color: #005083;}
+.style3 {color: #B7B7B7}
+.style4 {color: #000000}
+.deposerEcrito {
+	color: #ffffff;
+	font-size: 25px;
+
+}
+
+
+pour le moteur de recherche
+ .local {
+	font-family: Verdana, Geneva, sans-serif;
+	margin-top: 14px;
+	font-weight: bold;
+	margin-left: 5px;
+	width: 340px;
+	float: left;
+	font-size: 14px;
+}
+.local a{font-family:Verdana, Geneva, sans-serif; color:#999}
+css liste recherche ! 
+div.list-item {
+border-left: none;
+border-right: none;
+width: 755px;
+margin-bottom: 2px;
+margin-left: 1px;
+clear: both;
+float: none;
+min-height: 120px;
+position: relative;
+}
+.local input {
+	background: white;
+	padding: 0;
+	width: 135px;
+	height: 30px;
+	_height: 20px;
+	_padding-top: 6px;
+	border: none;
+	border-top: solid 2px #b40000;
+	border-bottom: solid 2px #b40000;
+	float: left;
+	font-size: 11px;
+	font-weight: normal;
+	font-family: Verdana;
+	color: #A1B4B9;
+}
+.searchIcon {
+	float: left;
+	background: url('images/loupe_de_recherche.png') no-repeat scroll;
+	width: 30px;
+	height: 30px;
+	border-left: solid 2px #b40000;
+	border-top: solid 2px #b40000;
+	border-bottom: solid 2px #b40000;
+}
+a.search_button {
+	width: 36px;
+	height: 30px;
+	display: inline-block;
+	border: none;
+	border-right: solid 2px #b40000;
+	border-top: solid 2px #b40000;
+	border-bottom: solid 2px #b40000;
+	background: white url('images/lancer_recherche.png') no-repeat scroll ;
+	margin-top: 0;
+	float: left;
+}
+/* hgjhgkj 
+
+pour la classe searchIcon 
+-108px -107px
+
+Pour la classe search_button 
+-48px -136px
+
+
+
+
+*/

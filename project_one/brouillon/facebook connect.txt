@@ -1,0 +1,1 @@
+http://blog.bowjay.com/2012/01/11/comment-integrer-facebook-connect-sur-son-site-web-via-le-php-sdk-3-1-1/

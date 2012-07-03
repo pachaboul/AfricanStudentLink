@@ -1,0 +1,701 @@
+/* MAIN TYPOGRAPHY */
+html {
+	font-size: 62.5%;
+	font-family:Arial, Helvetica, sans-serif;
+}
+strong, th, thead td, h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+cite, em, dfn {
+	font-style: italic;
+}
+code, kbd, samp, pre, tt, var {
+	font-size: 92%;
+	font-family: courier, monaco, "Lucida Console", mono-space;
+}
+textarea, select, option {
+	font-family: tahoma, courier, monaco, "Lucida Console", mono-space;
+	font-size:100%;
+}
+input[type='text'], input[type='password'] {
+	font-family: tahoma, courier, monaco, "Lucida Console", mono-space;
+	font-size:100%;
+}
+del {
+	text-decoration: line-through;
+	color: #666;
+}
+ins, dfn {
+	border-bottom: 1px solid #ccc;
+}
+small, sup, sub {
+	font-size: 85%;
+}
+abbr, acronym {
+	text-transform: uppercase;
+	font-size: 85%;
+	letter-spacing: .1em;
+}
+a abbr, a acronym {
+	border: none;
+}
+abbr[title], acronym[title], dfn[title] {
+	cursor: help;
+	border-bottom: 1px solid #ccc;
+}
+sup {
+	vertical-align: super;
+}
+sub {
+	vertical-align: sub;
+}
+/* QUOTES */
+blockquote {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	color: #666;
+}
+blockquote *:first-child:before {
+	content: "\201C";
+} /* More characters http://jrgraphix.net/research/unicode_blocks.php?block=48 */
+blockquote *:first-child:after {
+	content: "\201D";
+} /* More characters http://jrgraphix.net/research/unicode_blocks.php?block=48 */
+/* language specific quotes! */
+q {
+	quotes: "\201C" "\201D" "\2018" "\2019";
+} /* More characters http://jrgraphix.net/research/unicode_blocks.php?block=48 */
+/* FORMS */
+fieldset {
+	border: 1px solid #ccc;
+}
+legend {
+	background: #fff;
+}
+textarea, input[type='text'], input[type='password'], select {
+	border: 1px solid #ccc;
+	background: #fff;
+}
+textarea:hover, input[type='text']:hover, input[type='password']:hover, select:hover {
+	border-color: #aaa;
+}
+textarea:focus, input[type='text']:focus, input[type='password']:focus, select:focus {
+	border-color: #888;
+	outline: 2px solid #ffffaa;
+}
+input, select {
+	cursor: pointer;
+}
+input[type='text'], input[type='password'] {
+	cursor: text;
+}
+input {
+	vertical-align:middle;
+}
+/*
+-----------------------------
+CONTENT ONLY
+-----------------------------
+*/
+
+/* BASE SIZES */
+body {
+	font-size: 1.2em;
+	line-height: 1.6em;
+	background:#d0d0d0 url(../images/topbg.jpg) top center no-repeat;
+	color:#000;
+}
+h1 {
+	font-size: 1.6em;
+}
+h2 {
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 1.4em;
+}
+h4 {
+	font-size: 1.3em;
+}
+h5 {
+	font-size: 1.2em;
+}
+h6 {
+	font-size: 1em;
+}
+/* HR */
+hr {
+	display: block;
+	background: #aaa;
+	color: #aaa;
+	width: 100%;
+	height: 1px;
+	border: none;
+}
+/* LISTS */
+/* ul {margin:0; padding:0; list-style:none} ul li {text-indent: 0; margin: 0; padding:0; list-style:none;} ul li:before {content: "";} */
+ul li {
+	text-indent: -.85em;
+	margin-left: .85em;
+}
+ul li:before {
+	content: "\2022\00a0\00a0";
+} /* More characters http://jrgraphix.net/research/unicode_blocks.php?block=48 */
+ol {
+	list-style-position: outside;
+	list-style-type: decimal;
+}
+dt {
+	font-weight: bold;
+}
+/* TABLES */
+table {
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+th, td {
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ccc;
+	vertical-align:top;
+}
+/* MARGINS & PADDINGS */
+blockquote *:first-child {
+	margin: .8em 0;
+}
+hr, p, ul, ol, dl, pre, blockquote, address, table, form {
+	margin-bottom: 1.6em;
+}
+p+p {
+	margin-top: -.8em;
+}
+/* NOTE: Calulate header margins: TOP: 1.6em/size, BOTTOM: 1.6em/size/2 */
+h1 {
+	margin: 1em 0 .5em;
+}
+h2 {
+	margin: 1.07em 0 .535em;
+}
+h3 {
+	margin: 1.14em 0 .57em;
+}
+h4 {
+	margin: 1.23em 0 .615em;
+}
+h5 {
+	margin: 1.33em 0 .67em;
+}
+h6 {
+	margin: 1.6em 0 .8em;
+}
+th, td {
+	padding: .8em;
+}
+caption {
+	padding-bottom: .8em;
+} /* padding instead of margin for IE */
+blockquote {
+	padding: 0 1em;
+	margin: 1.6em 0;
+}
+fieldset {
+	padding: 0 1em 1em 1em;
+	margin: 1.6em 0;
+} /* padding-top is margin-top for fieldsets in Opera */
+legend {
+	padding-left: .8em;
+	padding-right: .8em;
+}
+legend+* {
+	margin-top: 1em;
+} /* compensates for the opera margin bug */
+textarea, input {
+	padding: .15em .4em .25em .4em;
+}
+input {
+	margin:0.1em 0.3em 0.3em 0em
+}
+select {
+	padding: .1em 0 0 .2em;
+}
+option {
+	padding: 0 .4em;
+}
+ul {
+	margin-left: 1.5em;
+}
+ol {
+	margin-left: 2.35em;
+}
+ol ol, ul ol {
+	margin-left: 2.5em;
+}
+form div {
+	margin-bottom: .8em;
+}
+/* DT, DL, DD */
+/*dt, dl, dd {margin:0; font-weight:normal;} */
+dt {
+	margin-top: .8em;
+	margin-bottom: .4em;
+}
+/* COLORS */
+/* a:link, a:visited, a:hover, a:active, a:focus */
+a:link {
+	text-decoration: underline;
+	color: #36c;
+}
+a:visited {
+	text-decoration: underline;
+	color: #99c;
+}
+a:hover {
+	text-decoration: underline;
+	color: #c33;
+}
+a:active, a:focus {
+	text-decoration: underline;
+	color: #000;
+}
+code, pre {
+	color: #c33;
+} /* very optional, but still useful. W3C uses about the same colors for codes */
+/* CLEARFIX */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+	font-size:0;
+}
+.clearfix {
+	display: inline-block;
+} /* for IE/Mac */
+html[xmlns] .clearfix {
+	display: block;
+}
+/* IMG ALIGN */
+img[align=left] {
+	float:left;
+	margin:0 1em 1em 0
+}
+img[align=right] {
+	float:right;
+	margin:0 0 1em 1em
+}
+/*Layout*/
+.main {
+	width:920px;
+	margin:0 auto;
+	padding:19px 0 0 0;
+}
+.head {
+}
+.head table {
+	border:0;
+	margin:0;
+}
+.head table td {
+	border:0;
+	padding:0;
+}
+.logo_espace {
+	/* width : 182;
+	height : 94; */
+	float:left;
+	padding:0 0 0 165px;
+	/* background: url(../images/logo.gif); */
+}
+.head table td.logo {
+	background:  url(../images/logo.gif) left no-repeat; /* #141414  #0a1019*/
+	background:  url(../images/logobg.jpg);
+	padding:27px 0 0 20px;
+}
+.head table td h2 {
+	color:#FFF;
+	font-weight:normal;
+	font-size:32px;
+	margin:0 0 7px 0;
+}
+.head table td.logo div {
+	color:#f6ff00;
+	font-size:1em;
+	font-style:italic;
+	line-height:1.2em;
+}
+.head table td.img {
+	background:url(../images/logobgright.png) top no-repeat;
+	font-size:0;
+	line-height:0;
+	width:55px;
+}
+.menutd {
+	background:url(../images/menubg.jpg) bottom repeat-x;
+}
+.menutd ul {
+	margin:0;
+	background:url(../images/menulft.jpg) left no-repeat;
+	padding:0 0 0 55px;
+	clear:both;
+}
+.menutd ul ul {
+	margin:0;
+	padding:0;
+	background: none;
+}
+
+.menutd ul li {
+	float:left;
+	list-style:none;
+	margin-left:0;
+	text-indent:0;
+	padding:15px 45px 0 0;
+	height:37px;
+	background:url(../images/separ.jpg) top right no-repeat;
+}
+.menutd ul li.last {
+	background:none;
+	padding-right:10px;
+}
+.menutd ul li:before {
+	content:""
+}
+.menutd ul li a:link, .menutd ul li a:visited, .menutd ul li a:active {
+	font-size:15px;
+	color:#fff;
+	font-weight:bold;
+	text-decoration:none;
+}
+.menutd ul li a:hover {
+	text-decoration:underline
+}
+.abovemenu {
+	height:43px;
+}
+.phone{
+	float:left;
+	padding:0 0 0 20px;
+	margin-left:16px;
+	font-size:16px;
+	color:#484848;
+	font-weight:bold;
+	/* background: url(../images/deposer.jpg); */
+}
+.dostavka{font-size:12px; font-style:italic; line-height:7px; margin-bottom:9px; font-weight:normal;}
+.cartsearch {
+	float:right;
+}
+a.cart {
+	float:right;
+	border-left:1px solid #474a4b;
+	padding:0px 20px 0px 55px;
+	background:url(../images/cart.png) center left no-repeat;
+	text-decoration:none;
+	color:#505050;
+	line-height:17px;
+	font-size:13px;
+}
+.cart strong {
+	color:#484848;
+}
+a.cart div {
+	text-decoration:underline;
+	color:#484848;
+}
+.sitesearch {
+	float:left;
+	margin:5px 20px 0 0;
+	color:#484848;
+}
+.sitesearch .sch {
+	margin-left:7px;
+	border:1px solid #a1a9a9;
+}
+.content {
+	background:#FFF url(../images/lcolbg.jpg) left repeat-y;
+}
+.leftcol {
+	width:193px;
+	background:#B40000;
+	float:left;
+}
+.leftcol h4 {
+	margin:0;
+	color:#b40000;
+	font-size:14px;
+	background:#b40000 url(../images/greenbg.jpg) top repeat-x;
+	padding:10px 10px 7px 22px;
+}
+.leftcol ul {
+	margin:0;
+	border-bottom:2px solid #fff;
+}
+.leftcol ul li {
+	list-style:none;
+	margin-left:0;
+	text-indent:0;
+	color:#fff;
+	background:#b40000 url(../images/categbg.png) top repeat-x;
+}
+.leftcol ul li:before {
+	content:""
+}
+.leftcol ul li.parent {
+		padding:8px 5px 8px 24px;
+		background:#B40000 url(../images/categbghov.png) bottom repeat-x;
+		font-size:16px;
+}
+
+.leftcol ul li a:link, .leftcol ul li a:visited, .leftcol ul li a:active {
+	color:#fff;
+	display:block;
+	background: #b40000 url(../images/bulet1.gif) 10px 12px no-repeat;
+	padding:5px 5px 5px 24px;
+	text-decoration:underline;
+}
+.leftcol ul li a:hover{text-decoration:none;}
+
+
+.rightcol {
+	float:left;
+	width:727px;
+}
+.largeigm {
+	background:url(../images/maliens.png);
+	height:219px;
+	position:relative;
+	z-index:1;
+}
+.largeigm h3 {
+	margin-top:0;
+	font-size:17px;
+	text-transform:uppercase;
+}
+.largeigm .tdrive {
+	position:absolute;
+	color:#fff;
+	width:197px;
+	right:48px;
+	top:35px;
+	line-height:16px;
+}
+.enter {
+	background:url(../images/posetit.png);
+	width:121px;
+	height:36px;
+	text-indent:-9999em;
+	float:left;
+	overflow:hidden;
+}
+.whatdrive {
+	background:#132132 url(../images/introbg.jpg) top repeat-x;
+	color:#fff;
+	padding:20px 20px 18px 30px;
+	line-height:18px;
+}
+.whatdrive h2 {
+	margin:0 0 10px;
+	font-weight:normal;
+	font-size:24px;
+}
+.whatdrive span, .whatdrive a {
+	color:#e7f72a;
+}
+.popular {
+	margin:0;
+	padding-bottom:15px;
+}
+form.popular div {
+	margin-bottom:0;
+}
+.popular h3 {
+	color: #fff;
+	margin:0;
+	background:url(../images/greybg.jpg) top repeat-x;
+	font-size:21px;
+	font-weight:normal;
+	padding:8px 0 9px 30px;
+}
+.popular table {
+	border:0;
+	width:90%;
+	margin:0 auto;
+}
+.popular table td {
+	border:0;
+	border-left:1px dotted #c0c1c1;
+	padding:30px 0 0px;
+	text-align:center;
+	width:33%;
+}
+.popular table td.first {
+	border:0;
+}
+.popular table td .moreinfo {
+	text-align:left;
+	color:#787878;
+	width:170px;
+	margin:0 auto;
+}
+.moreinfo .price {
+	font-weight:bold;
+	color:#000;
+	font-size:25px;
+	margin-bottom:10px;
+}
+.moreinfo strong a {
+	display:block;
+	color:#000;
+}
+.moreinfo input {
+	display:block;
+	padding:0;
+	margin-top:10px;
+}
+.footer1 {
+	background:#B40000;
+	padding:10px;
+}
+
+
+.footer {
+	background:#232323;
+	padding:10px;
+}
+.footer ul {
+	margin:0;
+	text-align:center;
+}
+.footer ul li {
+	display:inline;
+	list-style:none;
+	margin:0;
+	text-indent:0;
+}
+.footer ul li:before {
+	content:""
+}
+.footer ul li a {
+	color:#fff;
+	margin:0 10px;
+}
+.introtxt {
+	padding:0 30px;
+}
+.introtxt h3 {
+}
+span.more, span.more2 {
+	color:#478d00;
+	text-decoration:underline;
+}
+span.more2 {
+	display:none;
+}
+.isOpenTitle span.more {
+	display:none;
+}
+.isOpenTitle span.more2 {
+	display:inline;
+}
+.m5AccordionPanelContent  {
+
+}
+.m5Accordion {
+	padding:0 0 20px 0;
+}
+.m5AccordionPanelTab a {
+	color:#000;
+}
+#tooltip {
+	position: absolute;
+	z-index: 3000;
+	border: 1px solid #111;
+	background-color: #eee;
+	padding: 5px;
+	opacity: 0.85;
+	width:300px;
+}
+#tooltip h3 {
+	font-size:13px;
+}
+#tooltip h3, #tooltip div {
+	margin: 0;
+}
+/* 
+	LEVEL ONE
+*/
+ul.dropdown {
+	position: relative;
+}
+ul.dropdown li {
+	float: left;
+	zoom: 1;
+	list-style:none;
+	text-indent:0;
+	margin-left:0;
+}
+ul.dropdown li:before {
+	content:""
+}
+ul.dropdown a:hover {
+	color: #000;
+}
+ul.dropdown a:active {
+	color: #ffa500;
+}
+ul.dropdown li a {
+	display: block;
+}
+ul.dropdown li:last-child a {
+	border-right: none;
+} /* Doesn't work in IE */
+ul.dropdown li.hover, ul.dropdown li:hover {
+	position: relative;
+}
+/* 
+	LEVEL TWO
+*/
+ul.dropdown ul {
+	width: 220px;
+	visibility: hidden;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index:2
+}
+ul.dropdown ul li {
+	font-weight: normal;
+	color: #000;
+	border-bottom: 1px solid #000;
+	float: none;
+}
+/* IE 6 & 7 Needs Inline Block */
+ul.dropdown ul li a {
+	border-right: none;
+	width: 100%;
+	display: inline-block;
+}
+/* 
+	LEVEL THREE
+*/
+ul.dropdown ul ul {
+	left: 100%;
+	top: 0;
+}
+ul.dropdown li:hover > ul {
+	visibility: visible;
+}
+.menutd ul ul li, .menutd ul ul ul li {
+	padding:7px;
+	height:auto;
+	background:#678205;
+	font-weight:normal;
+}
+.menutd ul ul li a:link, .menutd ul ul li a:visited, .menutd ul ul li a:hover, .menutd ul ul li a:active, .menutd ul ul ul li a:link, .menutd ul ul ul li a:visited, .menutd ul ul ul li a:hover, .menutd ul ul ul li a:active {
+	font-size:12px;
+	font-weight:normal;
+}
+.counter{text-align:center; padding:10px;}
+.counter a{color:#474a4b;}
+.dontdel{margin-top:-30px; float:left;}.dontdel a{cursor:default}

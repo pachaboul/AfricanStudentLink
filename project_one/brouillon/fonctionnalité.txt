@@ -1,0 +1,13 @@
+- Ajouter Annonces
+- Valider Annonce
+- Rechercher Annonce
+- Etude de la base de donnée
+- Etude des templates
+
+
+- Menu (Accueil, Deposer, Qui  sommes nous, Aide)
+
+- Ajout des articles(news) par les internautes
+- espace blog, profil
+
+
